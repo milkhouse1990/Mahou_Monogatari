@@ -17,8 +17,8 @@ title: milkhouse
 email: milkhouse1990@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   一个记录了我的创作的部落格。
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/Mahou_Monogatari" # the subpath of your site, e.g. /blog
+url: "https://milkhouse1990.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
