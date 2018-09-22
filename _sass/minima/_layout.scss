@@ -48,14 +48,69 @@
 
   @include media-query($on-palm) {
     position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
+    top: 32px;
+  //   right: $spacing-unit / 2;
+  //   background-color: $background-color;
+  //   border: 1px solid $grey-color-light;
+  //   border-radius: 5px;
+  //   text-align: right;
 
-    label[for="nav-trigger"] {
+  //   label[for="nav-trigger"] {
+  //     display: block;
+  //     float: right;
+  //     width: 36px;
+  //     height: 36px;
+  //     z-index: 2;
+  //     cursor: pointer;
+  //   }
+
+  //   .menu-icon {
+  //     display: block;
+  //     float: right;
+  //     width: 36px;
+  //     height: 26px;
+  //     line-height: 0;
+  //     padding-top: 10px;
+  //     text-align: center;
+
+  //     > svg {
+  //       fill: $grey-color-dark;
+  //     }
+  //   }
+
+  //   input ~ .trigger {
+  //     clear: both;
+  //     display: none;
+  //   }
+
+  //   input:checked ~ .trigger {
+  //     display: block;
+  //     padding-bottom: 5px;
+  //   }
+
+  //   .page-link {
+  //     display: block;
+  //     padding: 5px 10px;
+
+  //     &:not(:last-child) {
+  //       margin-right: 0;
+  //     }
+  //     margin-left: 20px;
+  //   }
+  }
+}
+
+.out-novel-nav{
+  position: absolute;
+  border: 1px solid $grey-color-light;
+  border-radius: 5px;
+  background-color: $background-color;
+  float: right;
+
+  .nav-trigger {
+    display: none;
+}
+  label[for="nav-trigger"] {
       display: block;
       float: right;
       width: 36px;
@@ -66,7 +121,7 @@
 
     .menu-icon {
       display: block;
-      float: right;
+      float: left;
       width: 36px;
       height: 26px;
       line-height: 0;
@@ -76,31 +131,48 @@
       > svg {
         fill: $grey-color-dark;
       }
-    }
+}
 
-    input ~ .trigger {
+    input ~ .novel-nav {
       clear: both;
       display: none;
     }
+      //   input:checked ~ .trigger {
+  //     display: block;
+  //     padding-bottom: 5px;
+  //   }
+  
+input:checked ~ .novel-nav{
+  display: block;
+  // float: left;
+  text-align: left;
+  padding-bottom: 5px;
 
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
+    left: 0px;//$spacing-unit / 2;
 
-    .page-link {
-      display: block;
-      padding: 5px 10px;
+  .novel-nav-trigger{
+    display: none;
+  }
 
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
+  label[for=".novel-nav-trigger"]{
+    display: block;
+  }
+
+  input ~ .novel-trigger {
+    clear: both;
+    display: none;
+  }
+
+  input:checked ~ .novel-trigger {
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .story-link{
+    display: block;
   }
 }
-
-
+}
 
 /**
  * Site footer
