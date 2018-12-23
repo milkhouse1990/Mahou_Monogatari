@@ -1,0 +1,3 @@
+分开在2个世界，各自打怪。boss横跨两个世界。
+
+aqua酱和Selina互换。aqua酱在Hebe帮助下让人类接受她的特别，Selina在milk酱帮助下让兔耳族接受她的歌声。
